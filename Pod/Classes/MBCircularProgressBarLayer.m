@@ -33,6 +33,7 @@
 @dynamic valueFontName;
 @dynamic showUnitString;
 @dynamic showValueString;
+@dynamic isBGFilled;
 
 
 #pragma mark - Drawing
@@ -75,6 +76,10 @@
                                    (CGLineCap)self.emptyCapType,
                                    kCGLineJoinMiter,
                                    10);
+    
+    if(self.isBGFilled) {
+        CGContextAddPath(c, arc);
+    }
     
     
     CGContextAddPath(c, strokedArc);

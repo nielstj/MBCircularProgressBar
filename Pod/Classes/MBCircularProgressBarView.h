@@ -71,6 +71,9 @@ IB_DESIGNABLE
 /* The color of the background bar */
 @property (nonatomic,strong) IBInspectable UIColor   *emptyLineColor;
 
+/* The color of the background to be filled or not */
+@property (nonatomic, assign) IBInspectable BOOL isBGFilled;
+
 /* The shape of the background bar cap	{kCGLineCapButt=0, kCGLineCapRound=1, kCGLineCapSquare=2} */
 @property (nonatomic,assign) IBInspectable NSInteger emptyCapType;
 

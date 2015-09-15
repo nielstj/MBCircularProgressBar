@@ -253,6 +253,14 @@
   return self.progressLayer.showUnitString;
 }
 
+- (void)setIsBGFilled:(BOOL)isBGFilled {
+    self.progressLayer.isBGFilled = isBGFilled;
+}
+
+- (BOOL)isBGFilled {
+    return self.progressLayer.isBGFilled;
+}
+
 #pragma mark - CALayer
 
 -(MBCircularProgressBarLayer*)progressLayer{
