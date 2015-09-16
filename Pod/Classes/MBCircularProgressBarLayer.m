@@ -84,7 +84,7 @@
     
     CGContextAddPath(c, strokedArc);
     CGContextSetStrokeColorWithColor(c, self.emptyLineColor.CGColor);
-    CGContextSetFillColorWithColor(c, self.emptyLineColor.CGColor);
+    CGContextSetFillColorWithColor(c, self.bgFillColor.CGColor);
     CGContextDrawPath(c, kCGPathFillStroke);
     
     CGPathRelease(arc);

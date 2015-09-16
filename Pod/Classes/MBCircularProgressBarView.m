@@ -261,6 +261,16 @@
     return self.progressLayer.isBGFilled;
 }
 
+
+- (void)setBgFillColor:(UIColor *)bgFillColor {
+    self.progressLayer.bgFillColor = bgFillColor;
+}
+
+- (UIColor *)bgFillColor {
+    return self.progressLayer.bgFillColor;
+}
+
+
 #pragma mark - CALayer
 
 -(MBCircularProgressBarLayer*)progressLayer{

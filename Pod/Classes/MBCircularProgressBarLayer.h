@@ -37,6 +37,8 @@
 @property (nonatomic,assign)  BOOL      showUnitString;
 @property (nonatomic,assign)  BOOL      showValueString;
 
+
+@property (nonatomic, strong) UIColor   *bgFillColor;
 @property (nonatomic, assign) BOOL      isBGFilled;
 
 @end
